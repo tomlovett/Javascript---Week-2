@@ -38,11 +38,11 @@ var found = document.getElementById('found')
 find.addEventListener('submit', function(event) {
 	var street = find.elements.street.value;
 	var anyFound = false
+	found.textContent = ''
 	for (var i=0; i < volunteers.length; i++) {
 		if (volunteers[i]['street'] == street) {
 			var text = [volunteers[i]['name'], volunteers[i]['phoneNumber']].join(' ');
-			text = document.createTextNode(text);
-			found.appendChild(text);
+			found.textContent += text
 			anyFound = true;
 		}
 	}

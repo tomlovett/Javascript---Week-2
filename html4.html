@@ -7,14 +7,14 @@
 	</head>
 	<body>
 		<form class="input_box">
-			<label>Name</label>
-			<input type="text" name="name">
-			<label>Phone Number</label>
-			<input type="text" name="phoneNumber">
-			<label>Street Name</label>
-			<input type="text" name="street">
-			<button name="vicButton">Submit Victim</button>
-			<button name="volButton">Submit Volunteer</button>
+			Name: <input type="text" name="name">
+			Phone Number: <input type="text" name="phoneNumber">
+			Street Name:  <input type="text" name="street">
+			<input type="radio" name="role" value="victim" required="true"> Victim
+			<input type="radio"	name="role" value="volunteer"> Volunteer
+			<!-- <button type="submit" id="vicButton">Submit Victim</button> -->
+			<!-- <button type="submit" id="volButton">Submit Volunteer</button> -->
+			<button type="submit"> Submit</button>
 		</form>
 		<div><h3>Victims</h3></div>
 			<table id="victims">

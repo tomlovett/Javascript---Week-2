@@ -3,7 +3,7 @@ var birthDate = prompt("And your birthday? (MM/DD/YY)");
 var postalCode = prompt('And your zip code? (XXXXX or XXXXX-XXXX');
 var state = prompt("And your state? (XX)");
 var married = prompt("And is you married, girl? (Yes or No)");
-try {married = married.toLowerCase();} catch (error) {'Uh oh.';}
+try {married = married.toLowerCase();} catch (error) {'ruh roh.';}
 
 var valKey = [
 	/\d\d\d-\d\d\d-\d\d\d\d/, 	// phoneNumber

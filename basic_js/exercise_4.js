@@ -19,9 +19,9 @@ form.addEventListener('submit', function(event) {
 		var table = document.getElementById('volunteers');
 		volunteers.push({'name': name, 'phoneNumber': phoneNumber, 'street': street})	}
 	var row = document.createElement('tr');
-	table.appendChild(td(name));
-	table.appendChild(td(phoneNumber));
-	table.appendChild(td(street));
+	row.appendChild(td(name));
+	row.appendChild(td(phoneNumber));
+	row.appendChild(td(street));
 	table.appendChild(row);
 	event.preventDefault();
 })

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="bananaTree"> <!-- or the body -->
+	<head>
+		<title>Angular practice</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+		<script type="text/javascript" src="ex4-1.js"></script>
+	</head>
+	<body ng-controller="bananaTroller" class="ng-scope">
+		<h1 class="{{greeting}}">{{greeting}}</h1>
+		<h2 ng-bind="greeting" class="ng-binding">Sup dude?</h2>
+
+		<input ng-model="greeting">
+
+	</body>
+</html>

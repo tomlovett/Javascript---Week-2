@@ -11,9 +11,14 @@ function letterCapitalize(text) {
 console.log(letterCapitalize('today was a good day'));
 
 function wordCount(text) {
-	if (text && typeof text == "string") { var words = 1; }
+	if (text && typeof text == "string") { 
+		var words = 1;
+	} else { 
+		console.log('Error, input is not a word')
+		return false;
+	}
 	for (var i=0; i < text.length; i++) {
-		if (text[i] == ' ') { words += 1;}
+		if (text[i] === ' ') { words += 1;}
 	}
 	return words;
 }
@@ -22,7 +27,7 @@ console.log(wordCount('messed around and hit a triple-double'));
 
 function primeTime(num) {
 	if (num % 2 === 0) { return false; }
-	for (var i=3; i<num/2; i+= 2) {
+	for (var i = 3; i < num/2; i += 2) {
 		if (num % i === 0) { return false; }
 	}
 	return true;

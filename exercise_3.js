@@ -6,11 +6,11 @@ var married = prompt("And is you married, girl? (Yes or No)");
 try {married = married.toLowerCase();} catch (error) {'ruh roh.';}
 
 var valKey = [
-	/\d\d\d-\d\d\d-\d\d\d\d/, 	// phoneNumber
-	/\d\d\/\d\d\/\d\d/, 		// birthDate
-	/\d\d\d\d\d(-\d\d\d\d)?/,	// postalCode
-	/\w\w/, 					// state
-	/(yes|no)/ 					// married
+	/\d\d\d-\d\d\d-\d\d\d\d/, 	// phoneNumber XXX-XXX-XXXX
+	/\d\d\/\d\d\/\d\d/, 		// birthDate   MM/DD/YY
+	/\d\d\d\d\d(-\d\d\d\d)?/,	// postalCode  XXXXX or XXXXX-XXXX
+	/\w\w/, 					// state       MD
+	/(yes|no)/ 					// married	   yes or no	
 ]
 
 function validateAll() {

@@ -3,9 +3,10 @@ input_box {
 }
 
 input {
-	display: block;
+	display: inline-block;
 }
 
 button {
 	display: block;
+	margin-bottom: 5%;
 }

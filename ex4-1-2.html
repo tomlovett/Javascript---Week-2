@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="intro">
+<html ng-app="primary">
 	<head>
 		<title>Angular practice</title>
+		<link rel="stylesheet" href="ex4-1-2.css">
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
 		<script type="text/javascript" src="ex4-1-2.js"></script>
 	</head>
-	<body ng-controller="">
+	<body ng-controller="pinko">
 
-		<h2>Hurr Durr</h1>
+		<h2>Hurr Durr{{bonus}}</h1>
 
-		<p></p>
-		<p></p>
+		<p ng-class="{'pink': pinker[0]}" ng-mouseenter="pinker(0)" ng-mouseleave="killPinker(0)">Lorem ipsum dolor sit amet, id alterum postulant cotidieque mea, sed nisl sadipscing intellegebat eu. Duo at deleniti delicata, at vel tibique reformidans, in vero meliore vim. Abhorreant accommodare est ut, debitis voluptaria appellantur qui ad, duo an dicit utamur.</p>
 
-		<a href="#">Hurr durr some more</a>
+		<p  ng-class="{'pink': pinker[1]}" ng-mouseenter="pinker(1)" ng-mouseleave="killPinker(1)">Vix viris officiis ei, rebum simul cetero vel ea. Et vis ludus libris tibique, quo et velit movet consequuntur. Duo brute sanctus mnesarchum at, quem definiebas eloquentiam ne qui. Etiam consectetuer cu has. Pro cu partem audiam facilis, liber epicuri scribentur vis cu.</p>
 
-		<h3> Hurr-hurr hurr durr</h3>
+		<a href="#" ng-click='fireLink(0)' ng-hidden='killMeNow(0)'>Hurr durr some more</a>
 
-		<p></p>
+		<h3> Hurr-hurr hurr durr{{bonus}}</h3>
 
-		<a href="#">Hurr durr some more</a>
+		<p  ng-class="{'pink': pinker[2]}" ng-mouseenter="pinker(2)" ng-mouseleave="killPinker(2)">Tantas melius persequeris sit ne, ut facer iudicabit sea. An mei velit docendi ponderum, solum dolorum suavitate an nec, vix agam ferri iriure an. Has prodesset posidonium necessitatibus ei. Nisl aperiri virtute nam et. Errem affert sed ex, an laudem aliquando scribentur duo.</p>
+
+		<a href="#" ng-click='fireLink(1)' ng-hidden='killMeNow(1)'>Hurr durr some more</a>
 
 	</body>					
 </html>

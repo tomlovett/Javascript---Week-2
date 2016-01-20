@@ -1,15 +1,35 @@
+<!--
 <!DOCTYPE html>
-<html ng-app="bananaTree"> <!-- or the body -->
+<html ng-app="bananaTree"> <-- or the body
 	<head>
 		<title>Angular practice</title>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
 		<script type="text/javascript" src="ex4-1.js"></script>
 	</head>
 	<body ng-controller="bananaTroller" class="ng-scope">
-		<h1 class="{{greeting}}">{{greeting}}</h1>
+		<h1 class="{{greeting}}">{{greetin</h1>
 		<h2 ng-bind="greeting" class="ng-binding">Sup dude?</h2>
 
 		<input ng-model="greeting">
 
 	</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html ng-app="intro">
+	<head>
+		<title>Angular practice</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+		<script type="text/javascript" src="ex4-1.js"></script>
+	</head>
+	<body ng-controller="cntrls">
+
+		<button ng-click="clickr()" >Hit me!</button>
+		<h1>{{greeting}}</h1>
+
+		<button ng-click="bigMistake()">You don't want none of this...</button>
+		<div ng-show="showMe"><h3>{{title}}</h3><ol><li>{{one}}</li><li>{{two}}</li><li>{{three}}</li></ol></div>
+
+	</body>					
 </html>

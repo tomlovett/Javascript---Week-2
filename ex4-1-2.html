@@ -14,13 +14,19 @@
 
 		<p  ng-class="{'pink': pinker[1]}" ng-mouseenter="pinker(1)" ng-mouseleave="killPinker(1)">Vix viris officiis ei, rebum simul cetero vel ea. Et vis ludus libris tibique, quo et velit movet consequuntur. Duo brute sanctus mnesarchum at, quem definiebas eloquentiam ne qui. Etiam consectetuer cu has. Pro cu partem audiam facilis, liber epicuri scribentur vis cu.</p>
 
-		<a href="#" ng-click='fireLink(0)' ng-hidden='killMeNow(0)'>Hurr durr some more</a>
+		<a href="#" ng-click='fireLink(0)' ng-hide='killMeNow[0]'>Hurr durr some more</a>
 
 		<h3> Hurr-hurr hurr durr{{bonus}}</h3>
 
 		<p  ng-class="{'pink': pinker[2]}" ng-mouseenter="pinker(2)" ng-mouseleave="killPinker(2)">Tantas melius persequeris sit ne, ut facer iudicabit sea. An mei velit docendi ponderum, solum dolorum suavitate an nec, vix agam ferri iriure an. Has prodesset posidonium necessitatibus ei. Nisl aperiri virtute nam et. Errem affert sed ex, an laudem aliquando scribentur duo.</p>
 
-		<a href="#" ng-click='fireLink(1)' ng-hidden='killMeNow(1)'>Hurr durr some more</a>
+		<a href="#" ng-click='fireLink(1)' ng-hide='killMeNow[1]'>Hurr durr some more</a>
+		<br><br>
+		<button ng-click='showButton()' ng-hide='lookAtMyButt'>Wanna look at my butt?</button>
+
+		<div class="my-butt" ng-show='lookAtMyButt'>
+			<button ng-click='hideButt()'>I'm done looking, thank you.</button>
+		</div>
 
 	</body>					
 </html>

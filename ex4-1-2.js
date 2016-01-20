@@ -3,6 +3,7 @@ angular.module('primary', []);  // init module
 angular.module('primary')
 	.controller('pinko', ['$scope', function($scope) {
 
+
 		$scope.pinker = function(p) {
 			$scope.pinker[p] = true;
 			// console.log('pinker fired on ', p);
@@ -16,8 +17,22 @@ angular.module('primary')
 
 		$scope.bonus = '!!'
 
+		$scope.killMeNow = [false, false];
+
 		$scope.fireLink = function(n) {
-			$scope.prompt('Are you sure you want to do this?')
+			if (!confirm(promptMessage)) {
+				event.preventDefault();
+				$scope.killMeNow[n] = true;
+			}
+		}
+		var promptMessage = 'Continue to outside link?\n(Note: If you refuse this link will be murdered)';
+
+		$scope.showButton = function() {
+			$scope.lookAtMyButt = true;
+		}
+
+		$scope.hideButt = function() {
+			$scope.lookAtMyButt = false;
 		}
 
 	}]);

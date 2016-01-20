@@ -1,3 +1,14 @@
 .pink {
 	color: pink;
 }
+
+.my-butt {
+	display: inline-block;
+	background-color: green;
+	position: fixed;
+	top: 25%;
+	line-height: 50%;
+	left: 25%;
+	height: 400px;
+	width: 400px;
+}
